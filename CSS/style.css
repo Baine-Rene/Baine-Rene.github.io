@@ -7,3 +7,6 @@ body{
     align-items: center;
     display: flex;
 }
+#header h1{
+    font-family: 'Courier New', Courier, monospace;
+}
