@@ -2,6 +2,11 @@ body{
     overflow-x: hidden;
 }
 
+/* Header */
+header{
+    background-color: #3f004e;
+}
+
 header h5{
 text-align: left;
 }
