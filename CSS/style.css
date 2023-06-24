@@ -8,11 +8,11 @@ header{
     padding-bottom: 150px;
 }
 header{
-    background-image: url(../IMG/Backgrounds/blob-haikei-header.svg);
+    background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
+
 }
 header h5{
 text-align: left;
