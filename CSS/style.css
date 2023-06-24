@@ -3,28 +3,44 @@ body{
 }
 
 /* Header */
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color:blueviolet;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+  }  
+
 header{
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 150px;
 }
+
 header{
     background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
-header h5{
-text-align: left;
 
-}
-header h1{
+
+  header h1{
     font-family: 'Bree Serif', serif;
-    font-size: 60px;
-    
+    font-size: 69px;
+
+}
+    header p{
+        text-align: justify;
 }
 .btn{
     background-color: blueviolet;
     font-family: 'Bree Serif', serif;
     color: white;
 }
+
+
