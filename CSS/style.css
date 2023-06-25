@@ -47,9 +47,10 @@ header{
 }
 /* Quote */
 #quote{
-border-radius: 90px 90px 90px 90px;
+border-radius: 120px 120px 120px 120px;
 background: #e7e7e7;
 padding: 30px;
+
 }
 #quote h3{
  text-align: center;
