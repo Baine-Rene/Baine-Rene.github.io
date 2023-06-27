@@ -112,7 +112,7 @@ header h1 {
   font-size: 69px;
 }
 header h5{
-  font-weight: 565;
+  font-weight: 580;
 }
 
 header p {
@@ -190,33 +190,53 @@ header p {
 #projects .container{
   z-index: -10;
 }
+
 #projects .card{
-  z-index: 1;
+  background-color: #e7e7e7;
+  border-radius: 25px;
+}
+#projects .card:hover{
+  background-color: #8a2be2;
+  color: white;
+}
+#projects .card-title:hover{
+color: white;
+}
+#projects a{
+  color: #000;
+}
+#projects a:hover{
+  color: white;
 }
 #projects .badge{
   background-color: #8a2be2;
 }
-#projects .col-lg-4{
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+#projects .card .badge:hover{
+  background-color: whitesmoke;
 }
 
-@-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+.showcase .showcase-text {
+  padding: 3rem;
 }
-@-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
 }
-@keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* Social media stick footer */
@@ -243,7 +263,7 @@ header p {
 }
 
 .instagram {
-  background: blueviolet;
+  background: #8a2be2;
   color: white;
   border-radius: 0px 20px 0px 0px;
 }
