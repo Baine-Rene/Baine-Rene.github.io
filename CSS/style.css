@@ -215,6 +215,12 @@ color: white;
   background-color: whitesmoke;
 }
 
+
+/* Showcase */
+.showcase h1{
+  font-weight: 600;
+  
+}
 .showcase .showcase-text {
   padding: 3rem;
 }
