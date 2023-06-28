@@ -97,7 +97,7 @@ input[type="checkbox"]{
 
 header {
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 150px;
 }
 
 header {
@@ -217,32 +217,33 @@ color: white;
 
 
 /* Showcase */
-.showcase h1{
+.showcase h2{
   font-weight: 600;
-  
+  font-size: 35px;
+  font-family: "Bree Serif", serif;
 }
+
 .showcase .showcase-text {
   padding: 3rem;
+  border-radius: 0px 0px 0px 0px;
 }
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
+  border-radius: 0px 0px 0px 0px;
 }
+@media (max-width: 575.98px){
+  .showcase .showcase-img {
+    border-radius: 0px 0px 90px 90px;
+  }
+  
+}
+
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* Social media stick footer */
@@ -284,3 +285,56 @@ color: white;
   color: white;
   border-radius: 0px 0px 20px 0px;
 }/*# sourceMappingURL=style.css.map */
+
+/* Footer */
+
+footer {
+  padding: 7em 0; }
+
+.footer-10 {
+  background: #100014;
+  padding: 0 0 4em 0; }
+  .footer-10 .border-top, .footer-10 .border-bottom {
+    border-color: rgba(255, 255, 255, 0.1) !important; }
+  .footer-10 .footer-heading {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px; }
+  .footer-10 p {
+    color: rgba(255, 255, 255, 0.3); }
+  .footer-10 a {
+    color: #ffffff; }
+    
+  .footer-10 .con.con-1 {
+    background: #8a2be2;
+    border-radius: 0px 0px 30px 30px;
+   }
+  .footer-10 .con.con-2 {
+    background: #8a2be2; 
+    border-radius: 0px 0px 30px 30px;
+  }
+  .footer-10 .con.con-3 {
+    background: #8a2be2; 
+    border-radius: 0px 0px 30px 30px;
+  }
+  .footer-10 .list-unstyled li a {
+    color: rgba(255, 255, 255, 0.2); }
+    .footer-10 .list-unstyled li a:hover {
+      color: #fff; }
+      
+  .footer-10 .con-info .icon {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+    .footer-10 .con-info .icon span {
+      color: #fff;
+      font-size: 24px; }
+  .footer-10 .con-info span {
+    color: rgba(255, 255, 255, 0.8); }
+
+  .footer-10 .ftco-footer-social li a {
+    list-style: none;
+    color: #8a2be2; }
