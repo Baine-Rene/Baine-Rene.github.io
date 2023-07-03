@@ -281,60 +281,53 @@ color: white;
 }
 
 .github {
-  background: blueviolet;
+  background: #8a2be2;
   color: white;
   border-radius: 0px 0px 20px 0px;
 }/*# sourceMappingURL=style.css.map */
 
 /* Footer */
-
-footer {
-  padding: 7em 0; }
-
-.footer-10 {
-  background: #100014;
-  padding: 0 0 4em 0; }
-  .footer-10 .border-top, .footer-10 .border-bottom {
-    border-color: rgba(255, 255, 255, 0.1) !important; }
-  .footer-10 .footer-heading {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 30px; }
-  .footer-10 p {
-    color: rgba(255, 255, 255, 0.3); }
-  .footer-10 a {
-    color: #ffffff; }
-    
-  .footer-10 .con.con-1 {
-    background: #8a2be2;
-    border-radius: 0px 0px 30px 30px;
-   }
-  .footer-10 .con.con-2 {
-    background: #8a2be2; 
-    border-radius: 0px 0px 30px 30px;
+#footer{
+  font-family: "Bree Serif", serif;
+}
+.divider {
+  width: 100%;
+  height: 2rem;
+  background-color: #8a2be2;
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+#footer span{
+  font-size: 20px;
+}
+.bi-file-code-fill{
+  font-size: 30px;
+  color: #8a2be2;
+}
+#footer li{
+  font-size: 30px;
+}
+#footer li .bi-twitter{
+color: #8a2be2;
+}
+#footer li .bi-instagram{
+  color: #8a2be2;
   }
-  .footer-10 .con.con-3 {
-    background: #8a2be2; 
-    border-radius: 0px 0px 30px 30px;
+  #footer .bi-code{
+    font-size: 30px;
+    color: #8a2be2;
   }
-  .footer-10 .list-unstyled li a {
-    color: rgba(255, 255, 255, 0.2); }
-    .footer-10 .list-unstyled li a:hover {
-      color: #fff; }
-      
-  .footer-10 .con-info .icon {
-    width: 50px;
-    height: 50px;
-    background: #ffffff;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-bottom: 10px; }
-    .footer-10 .con-info .icon span {
-      color: #fff;
-      font-size: 24px; }
-  .footer-10 .con-info span {
-    color: rgba(255, 255, 255, 0.8); }
+   #footer li .bi-github{
+    color: #8a2be2;
+    }
 
-  .footer-10 .ftco-footer-social li a {
-    list-style: none;
-    color: #8a2be2; }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      #footer li{
+        font-size:unset;
+      }
+      #footer span{
+        font-size: 20px;
+      }
+    }
+  
