@@ -147,8 +147,6 @@ header p {
 /* Quote */
 #quote{
   padding-bottom: 70px;
-  padding-left: 280px;
-  padding-right: 280px;
 }
 #quote .container {
   border-radius: 120px 120px 120px 120px;
@@ -195,19 +193,13 @@ header p {
   background-color: #e7e7e7;
   border-radius: 25px;
 }
-#projects .card:hover{
-  background-color: #8a2be2;
-  color: white;
-}
 #projects .card-title:hover{
 color: white;
 }
 #projects a{
   color: #000;
 }
-#projects a:hover{
-  color: white;
-}
+
 #projects .badge{
   background-color: #8a2be2;
 }
