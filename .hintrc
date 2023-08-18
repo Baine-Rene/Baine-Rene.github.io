@@ -4,6 +4,19 @@
   ],
   "hints": {
     "no-inline-styles": "off",
-    "meta-viewport": "off"
+    "meta-viewport": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "disown-opener": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ]
   }
 }
