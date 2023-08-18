@@ -116,7 +116,7 @@ header h5{
 }
 
 header p {
-  text-align: justify;
+  text-align: start;
 }
 
 .btn {
@@ -181,30 +181,57 @@ header p {
   height: vh;
   width: 100%;
 }
+#projects .service-1{
+background-image: url(../IMG/Posters/Website\ services.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 842px;
+}
+#projects .service-2{
+  background-image: url(../IMG/Posters/Srevices\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 842px;
+  }
+  #projects .service-3{
+    background-image: url(../IMG/Posters/Services\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 842px;
+    }
 #projects h1{
   color: #ffffff;
   font-family: "Bree Serif", serif;
+  font-size: 69px;
 }
-#projects .container{
-  z-index: -10;
-}
+@media (max-width: 575.98px){
+  #projects h1{
+    color: #ffffff;
+    font-family: "Bree Serif", serif;
+    font-size: 55px;
+  }
 
-#projects .card{
-  background-color: #e7e7e7;
-  border-radius: 25px;
-}
-#projects .card-title:hover{
-color: white;
-}
-#projects a{
-  color: #000;
-}
-
-#projects .badge{
-  background-color: #8a2be2;
-}
-#projects .card .badge:hover{
-  background-color: whitesmoke;
+  #projects .service-1{
+    background-image: url(../IMG/Posters/Website\ services.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 542px;
+    border-radius: 20px;
+    }
+    #projects .service-2{
+      background-image: url(../IMG/Posters/Srevices\ 2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 542px;
+      border-radius: 20px;
+      }
+      #projects .service-3{
+        background-image: url(../IMG/Posters/Services\ 3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 542px;
+        border-radius: 20px;
+        }
 }
 
 
