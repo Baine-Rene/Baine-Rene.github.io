@@ -81,6 +81,12 @@ body {
     }
   }
 
+  #contact{
+    background-image: url(../IMG/Backgrounds/dddepth-082.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 #contact{
     padding-top: 100px;
     padding-bottom: 320px;
