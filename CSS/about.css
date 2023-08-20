@@ -87,8 +87,8 @@ body {
     font-size: 70px;
 }
 #about{
-    padding-top: 90px;
-    padding-bottom: 160px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 @media (max-width: 575.98px) {
     #about h2{
