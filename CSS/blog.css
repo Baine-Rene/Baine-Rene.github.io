@@ -98,14 +98,6 @@ input[type="checkbox"]{
   text-align: start;
 }
 
-a{
-text-decoration: none;
-}
-a:hover{
-  text-decoration: none;
-  color: #b46727;
-  }
-
 /* Social media stick footer */
 .icon-bar {
   position: fixed;
