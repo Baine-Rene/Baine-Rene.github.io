@@ -11,6 +11,7 @@ body {
   background: #000;
   clip-path: circle(20px at calc(100% - 45px) 45px);
   transition: all 0.8s ease-in-out;
+  z-index: 1;
 }
 #active:checked ~ .wrapper{
   clip-path: circle(75%);
@@ -29,7 +30,7 @@ body {
   font-size: 20px;
   color: #fff;
   cursor: pointer;
-  background:#b46727;
+  background:#8a2be2;
   transition: all 0.3s ease-in-out;
 }
 #active:checked ~ .menu-btn{
@@ -67,7 +68,7 @@ body {
   transform: scaleY(1);
 }
 .wrapper ul li a:hover{
-  color:#b46727;
+  color:#8a2be2;
 }
 input[type="checkbox"]{
   display: none;
@@ -86,7 +87,7 @@ input[type="checkbox"]{
   position: fixed;
   width: 20px;
   height: 20px;
-  background-color: #b46727;
+  background-color: blueviolet;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -117,14 +118,14 @@ header p {
 }
 
 .btn {
-  background-color: #b46727;
+  background-color: #8a2be2;
   border-radius: 0px 20px 0px 20px;
   font-family: "Bree Serif", serif;
   color: white;
 }
 
 .btn:hover {
-  background-color:#b46727;
+  background-color:#8a2be2;
   color: white;
 }
 
@@ -133,13 +134,12 @@ header p {
     font-size: 60px;
   }
   .btn {
-    background-color: #b46727;
+    background-color:#8a2be2;
     font-family: "Bree Serif", serif;
     border-radius: 10px 10px 10px 10px;
     color: white;
   }
 }
-
 
 /* Quote */
 #quote{
@@ -172,66 +172,43 @@ header p {
 
 /* Projects */
 #projects {
-  background-image: url(../IMG/Backgrounds/stacked-waves-haikei.svg);
+  background-image: url(../IMG/Backgrounds/blurry-gradient-haikei.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: vh;
   width: 100%;
+  padding-bottom: 180px;
+  padding-top: 70px;
 }
-#projects .service-1{
-background-image: url(../IMG/Posters/Website\ services.png);
-background-repeat: no-repeat;
-background-size: cover;
-height: 842px;
-border-radius: 20px;
+.card-group{
+  z-index: 0;
 }
-#projects .service-2{
-  background-image: url(../IMG/Posters/Srevices\ 2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 842px;
-  border-radius: 20px;
-  }
-  #projects .service-3{
-    background-image: url(../IMG/Posters/Services\ 3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 842px;
-    border-radius: 20px;
-    }
+
 #projects h1{
   color: #ffffff;
   font-family: "Bree Serif", serif;
   font-size: 69px;
 }
+.portfolio{
+  align-items: center;
+  text-align: center;
+  color: #8a2be2;
+}
+.portfolio a{
+  background-color: white;
+  color: #8a2be2;
+}
+
 @media (max-width: 575.98px){
   #projects h1{
     color: #ffffff;
     font-family: "Bree Serif", serif;
     font-size: 55px;
   }
+  #projects{
+    padding-bottom: 70px;
+  }
 
-  #projects .service-1{
-    background-image: url(../IMG/Posters/Website\ services.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 542px;
-    border-radius: 20px;
-    }
-    #projects .service-2{
-      background-image: url(../IMG/Posters/Srevices\ 2.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 542px;
-      border-radius: 20px;
-      }
-      #projects .service-3{
-        background-image: url(../IMG/Posters/Services\ 3.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 542px;
-        border-radius: 20px;
-        }
 }
 
 
@@ -285,22 +262,22 @@ border-radius: 20px;
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
   background-color: #ffffff;
-  color: #b46727;
+  color: blueviolet;
 }
 
 .instagram {
-  background: #b46727;
+  background: #8a2be2;
   color: white;
   border-radius: 0px 20px 0px 0px;
 }
 
 .twitter {
-  background: #b46727;
+  background: #8a2be2;
   color: white;
 }
 
 .github {
-  background: #b46727;
+  background: #8a2be2;
   color: white;
   border-radius: 0px 0px 20px 0px;
 }/*# sourceMappingURL=style.css.map */
@@ -312,7 +289,7 @@ border-radius: 20px;
 .divider {
   width: 100%;
   height: 2rem;
-  background-color: #b46727;
+  background-color: #8a2be2;
   border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -322,23 +299,23 @@ border-radius: 20px;
 }
 .bi-file-code-fill{
   font-size: 30px;
-  color: #b46727;
+  color: #8a2be2;
 }
 #footer li{
   font-size: 30px;
 }
 #footer li .bi-twitter{
-color: #b46727;
+color: #8a2be2;
 }
 #footer li .bi-instagram{
-  color:#b46727;
+  color:#8a2be2;
   }
   #footer .bi-code{
     font-size: 30px;
-    color: #b46727;
+    color: #8a2be2;
   }
    #footer li .bi-github{
-    color: #b46727;
+    color: #8a2be2;
     }
 
     @media (min-width: 576px) and (max-width: 767.98px) {

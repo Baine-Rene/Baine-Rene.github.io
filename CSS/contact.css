@@ -2,87 +2,88 @@ body {
     overflow-x: hidden;
   }
   /* NavBar */
-  .wrapper{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    clip-path: circle(20px at calc(100% - 45px) 45px);
-    transition: all 0.8s ease-in-out;
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  clip-path: circle(20px at calc(100% - 45px) 45px);
+  transition: all 0.8s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+.menu-btn{
+  position: fixed;
+  z-index: 2;
+  right: 20px;
+  /* left: 20px; */
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background:#8a2be2;
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+  color: #fff;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  margin: 55px ;
+  font-family: "Bree Serif", serif;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 5px 30px;
+  color: #fff;
+  border-radius: 50px;
+  background: #000;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.5s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color:#8a2be2;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
   }
-  #active:checked ~ .wrapper{
-    clip-path: circle(75%);
+  100%{
+    filter: hue-rotate(360deg);
   }
-  .menu-btn{
-    position: fixed;
-    z-index: 2;
-    right: 20px;
-    /* left: 20px; */
-    top: 20px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    background: #b46727;
-    transition: all 0.3s ease-in-out;
-  }
-  #active:checked ~ .menu-btn{
-    color: #fff;
-  }
-  #active:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  .wrapper ul{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-  }
-  .wrapper ul li{
-    margin: 55px ;
-    font-family: "Bree Serif", serif;
-  }
-  .wrapper ul li a{
-    color: none;
-    text-decoration: none;
-    font-size: 50px;
-    font-weight: 600;
-    padding: 5px 30px;
-    color: #fff;
-    border-radius: 50px;
-    background: #000;
-    position: relative;
-    line-height: 50px;
-    transition: all 0.5s ease;
-  }
-  .wrapper ul li a:hover:after{
-    transform: scaleY(1);
-  }
-  .wrapper ul li a:hover{
-    color: #b46727;
-  }
-  input[type="checkbox"]{
-    display: none;
-  }
-  @keyframes rotate {
-    0%{
-      filter: hue-rotate(0deg);
-    }
-    100%{
-      filter: hue-rotate(360deg);
-    }
-  }
+}
+
 
   #contact{
-    background-image: url(../IMG/Backgrounds/dddepth-345.jpg);
+    background-image: url(../IMG/Backgrounds/dddepth-143.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,6 +99,15 @@ body {
 #contact p{
     font-family: "Bree Serif", serif;
     font-size: 30px;
+}
+#contact .mail{
+  text-decoration:none;
+  font-size: 30px;
+  color: white;
+  font-family: "Bree Serif", serif;
+}
+#contact .mail:hover{
+  color: blueviolet;
 }
 @media (max-width: 575.98px) {
     #contact h1{
@@ -116,7 +126,6 @@ body {
         padding-bottom: 70px;
     }
 }
-
 
 
 /* Social media stick footer */
@@ -139,22 +148,22 @@ body {
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
   background-color: #ffffff;
-  color:#b46727;
+  color:#8a2be2;
 }
 
 .instagram {
-  background:#b46727;
+  background:#8a2be2;
   color: white;
   border-radius: 0px 20px 0px 0px;
 }
 
 .twitter {
-  background: #b46727;
+  background: #8a2be2;
   color: white;
 }
 
 .github {
-  background: #b46727;
+  background:#8a2be2;
   color: white;
   border-radius: 0px 0px 20px 0px;
 }/*# sourceMappingURL=style.css.map */
@@ -166,7 +175,7 @@ body {
 .divider {
   width: 100%;
   height: 2rem;
-  background-color: #b46727;
+  background-color: #8a2be2;
   border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -176,23 +185,23 @@ body {
 }
 .bi-file-code-fill{
   font-size: 30px;
-  color: #b46727;
+  color:#8a2be2;
 }
 #footer li{
   font-size: 30px;
 }
 #footer li .bi-twitter{
-color: #b46727;
+color: #8a2be2;
 }
 #footer li .bi-instagram{
-  color:#b46727;
+  color:#8a2be2;
   }
   #footer .bi-code{
     font-size: 30px;
-    color:#b46727;
+    color:#8a2be2;
   }
    #footer li .bi-github{
-    color: #b46727;
+    color: #8a2be2;
     }
 
     @media (min-width: 576px) and (max-width: 767.98px) {
