@@ -101,10 +101,6 @@ header {
   padding-bottom: 150px;
 }
 
-header {
-background-color: ;
-}
-
 header h1 {
   font-family: "Bree Serif", serif;
   font-size: 69px;
@@ -189,12 +185,12 @@ header p {
   font-family: "Bree Serif", serif;
   font-size: 69px;
 }
-.portfolio{
+.projects-page{
   align-items: center;
   text-align: center;
   color: #8a2be2;
 }
-.portfolio a{
+.projects-page a{
   background-color: white;
   color: #8a2be2;
 }
@@ -210,6 +206,46 @@ header p {
   }
 
 }
+  /* Projects */
+  #projects {
+    background-image: url(../IMG/Backgrounds/blurry-gradient-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: vh;
+    width: 100%;
+    padding-bottom: 180px;
+    padding-top: 70px;
+  }
+  .card-group{
+    z-index: 0;
+  }
+  
+  #projects h1{
+    color: #ffffff;
+    font-family: "Bree Serif", serif;
+    font-size: 69px;
+  }
+  .portfolio{
+    align-items: center;
+    text-align: center;
+    color: #8a2be2;
+  }
+  .portfolio a{
+    background-color: white;
+    color: #8a2be2;
+  }
+  
+  @media (max-width: 575.98px){
+    #projects h1{
+      color: #ffffff;
+      font-family: "Bree Serif", serif;
+      font-size: 55px;
+    }
+    #projects{
+      padding-bottom: 70px;
+    }
+  
+  }
 
 
 /* Showcase */
@@ -218,7 +254,6 @@ header p {
   font-size: 35px;
   font-family: "Bree Serif", serif;
 }
-
 .showcase .showcase-text {
   padding: 3rem;
   border-radius: 0px 0px 0px 0px;
@@ -234,12 +269,20 @@ header p {
   }
   
 }
-
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
   }
 }
+
+
+
+
+
+
+
+
+
 
 
 /* Social media stick footer */
@@ -280,7 +323,8 @@ header p {
   background: #8a2be2;
   color: white;
   border-radius: 0px 0px 20px 0px;
-}/*# sourceMappingURL=style.css.map */
+}
+
 
 /* Footer */
 #footer{

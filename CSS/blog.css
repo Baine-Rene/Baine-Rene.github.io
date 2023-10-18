@@ -80,19 +80,38 @@ input[type="checkbox"]{
     filter: hue-rotate(360deg);
   }
 }
+#about{
+  font-family: "Bree Serif", serif;
+}
 
-  /* Blog */
-#blog{
-  padding-top: 50px;
+/* Blog */
+#blog .blog-heading{
+  background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  border-radius: 0px 0px 50px 50px;
 }
-#blog .continue-reading{
-  text-decoration: none;
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-#blog .continue-reading:hover{
-  color: #8a2be2;
+
+
+#blog h1,h2,h3,h4{
+  font-family: "Bree Serif", serif;
 }
 .blog-post-title{
   font-size: 35px;
+  font-family: "Bree Serif", serif;
+
 }
 .blockquote{
   text-align: start;
