@@ -81,18 +81,27 @@ input[type="checkbox"]{
   }
 }
 
+/* Title*/
+.fade-up{
+ opacity: 0;
+ transform: translateY(20px);
+ transition: opacity 1s ease-in-out, transform 1s ease in;
+}
+#title h1{
+  font-family: "Bree Serif", serif;
+  font-size: 80px ;
+  align-items: center;
+  
+}
+
   
 /* About Section */
-#about h2{
-    font-family: "Bree Serif", serif;
-    font-size: 70px;
-}
-#about{
+#description{
     padding-top: 70px;
     padding-bottom: 70px;
 }
 @media (max-width: 575.98px) {
-    #about h2{
+    #description h2{
         font-family: "Bree Serif", serif;
         font-size: 60px;
     }

@@ -82,67 +82,12 @@ body {
   }
   /* End of Navbar */
 
-  /* Header */
-  .cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background-color: blueviolet;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0.9;
-    transform: translate(-50%, -50%);
-    transition: transform 0.2s ease;
-  }
-  
-  header {
-    padding-top: 90px;
-    padding-bottom: 150px;
-  }
-
-  
-  header h1 {
-    font-family: "Bree Serif", serif;
-    font-size: 69px;
-  }
-  header h5{
-    font-weight: 580;
-  }
-  
-  header p {
-    text-align: start;
-  }
-  
-  .btn {
-    background-color: #8a2be2;
-    border-radius: 0px 20px 0px 20px;
-    font-family: "Bree Serif", serif;
-    color: white;
-  }
-  
-  .btn:hover {
-    background-color:#8a2be2;
-    color: white;
-  }
-  
-  @media (max-width: 575.98px) {
-    header h1 {
-      font-size: 60px;
-    }
-    .btn {
-      background-color:#8a2be2;
-      font-family: "Bree Serif", serif;
-      border-radius: 10px 10px 10px 10px;
-      color: white;
-    }
-  }
-
-
   .badge{
     background-color: blueviolet;
   }
-  
+  @media (max-width:767px){
+  }
+
   /* Social media stick footer */
   .icon-bar {
     position: fixed;

@@ -110,7 +110,7 @@ input[type="checkbox"]{
   color: blueviolet;
 }
 @media (max-width: 575.98px) {
-    #contact h1{
+    #contact h1{ 
         text-align: center;
         font-size: 65px;
         font-family: "Bree Serif", serif;
@@ -119,6 +119,13 @@ input[type="checkbox"]{
         text-align: center;
         font-family: "Bree Serif", serif;
         font-size: 20px;
+    }
+
+    #contact .mail{
+      text-decoration:none;
+      font-size: 20px;
+      color: white;
+      font-family: "Bree Serif", serif;
     }
 
     #contact{

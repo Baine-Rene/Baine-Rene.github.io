@@ -1,3 +1,5 @@
+//Cursor
+
 document.addEventListener('DOMContentLoaded', function() {
     var cursor = document.querySelector('.cursor');
   
@@ -15,3 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
  });
  
+
+//About me title page transition.
+document.addEventListener ('DOMContentLoaded', function() {
+  var element = document.querySelector('.fade-up');
+  if (element) {
+    element.style.opacity = 1;
+    element.style.transform = 'translateY(0)';
+  }
+});

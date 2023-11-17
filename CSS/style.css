@@ -139,7 +139,8 @@ header p {
 
 /* Quote */
 #quote{
-  padding-bottom: 70px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 #quote .container {
   border-radius: 120px 120px 120px 120px;
