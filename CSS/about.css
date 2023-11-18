@@ -82,18 +82,17 @@ input[type="checkbox"]{
 }
 
 /* Title*/
-.fade-up{
+ .fade-up {
  opacity: 0;
  transform: translateY(20px);
  transition: opacity 1s ease-in-out, transform 1s ease in;
 }
-#title h1{
+ h1{
   font-family: "Bree Serif", serif;
   font-size: 80px ;
   align-items: center;
   
 }
-
   
 /* About Section */
 #description{

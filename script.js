@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
  
 
 //About me title page transition.
-document.addEventListener ('DOMContentLoaded', function() {
+
+document.addEventListener('DOMContentLoaded', function() {
   var element = document.querySelector('.fade-up');
   if (element) {
     element.style.opacity = 1;
