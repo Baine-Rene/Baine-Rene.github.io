@@ -337,12 +337,7 @@ header h5{
       .project-section .carousel-control-prev {
         margin-right: 30px; }
     
-        .hiro-section {
-          padding: 70px;
-          padding-bottom: 90px; }
-          @media (max-width: 767px) {
-            .hiro-section {
-              padding: 35px 20px; } }
+
            
 .hiro-team-carousel .carousel-item {
   padding: 10px; }
@@ -533,21 +528,122 @@ header h5{
   padding-bottom: 20px;
   color: #fff;
   text-align: center; }
+  
 
-@-webkit-keyframes spinner-border {
-  to {
-    transform: rotate(360deg); } }
+/* Services */
+.hiro-section {
+  padding: 70px;
+  padding-bottom: 90px; }
+  @media (max-width: 767px) {
+    .hiro-section {
+      padding: 35px 20px; } }
 
-@keyframes spinner-border {
-  to {
-    transform: rotate(360deg); } }
+.service-section {
+  padding-right: 150px;
+  position: relative; }
+  @media (max-width: 767px) {
+    .service-section {
+      padding-right: 90px; } }
+  @media (max-width: 574px) {
+    .service-section {
+      padding-right: 0; } }
+  .service-section::before, .service-section::after {
+    content: "";
+    position: absolute;
+    right: 40px;
+    display: block;
+    width: 70px;
+    height: calc(50% - 32px);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; }
+    @media (max-width: 767px) {
+      .service-section::before, .service-section::after {
+        width: 40px;
+        right: 25px;
+        background-size: auto; } }
+    @media (max-width: 574px) {
+      .service-section::before, .service-section::after {
+        content: none; } }
+  .service-section::before {
+    background-image: url("../IMG/Stock/img_2@2x.png");
+    bottom: calc(50% + 32px); }
+  .service-section::after {
+    background-image: url("../IMG/Stock/img_1@2x.png");
+    top: calc(50% + 32px); }
+  .service-section .service-category-title {
+    padding-bottom: 4px; }
+    .service-section .service-category-title::after {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 8px;
+      margin-top: 4px;
+      background-image: url("../IMG/Stock/Team_line_1.png");
+      background-size: auto 8px; }
 
-    /* Custom styles for carousel images */
-    .carousel-inner img {
-      max-height: 500px; /* Set the maximum height for carousel images */
-      object-fit: cover; /* Preserve the image aspect ratio and crop if necessary */
-    }
+      .service-list .list-group-item {
+        padding: 8px 0;
+        border-color: blueviolet;
+        font-size: 14px;
+        font-weight: 500; }
 
+        .list-group-flush .list-group-item {
+          border-right-width: 0;
+          border-left-width: 0;
+          border-radius: 0; }
+          .list-group-flush .list-group-item:first-child {
+            border-top-width: 0; }
+        
+        .list-group-flush:last-child .list-group-item:last-child {
+          border-bottom-width: 0; }
+
+          .list-group {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0; }
+
+            .career-section {
+              background-color: blueviolet;
+            }
+
+            .career-section-title {
+ }
+              .career-section .section-title {
+                position: relative;
+                padding-bottom: 50px; }
+                .career-section .section-title::after {
+                  content: "";
+                  display: block;
+                  width: 25%;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  height: 8px;
+                  background-image: url("../IMG/Stock/career_line@1x.svg");
+                  background-size: auto 8px; }
+
+  .career-title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+  }
+.section-text-ct {
+  font-family: "Bree Serif", serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 1.23; 
+
+}
+.col-md-6 .section-text-ct{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+  
 /* Showcase */
 
 .showcase h2{
