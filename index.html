@@ -24,6 +24,8 @@
     <!-- Stylesheet -->
     
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./Assets/animate.css/animate.min.css">
+    
 
     <!-- Favicon -->
     <link rel="icon" href="./IMG/Favicons/Favicon-1.png">
@@ -77,28 +79,104 @@
 </section>
 
 <!-- Projects Section-->
-<section  class="" id="projects">
-  <div class="container-fluid px-5">
-    <h1 class="fw-bolder mb-4 py-3 text-center">DESIGNS</h1>
-    <div class="row gx-5">
+<section class="project-section hiro-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5 wow fadeInUp">
+              <h1 class="section-title">My Work</h1>
+              <p class="section-text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia, dolor minus fugit laudantium fuga consequatur necessitatibus id reprehenderit dignissimos voluptatibus, beatae voluptas odit ut tempora, perspiciatis ea harum esse!</p>
+              <div>
 
-      <!-- Project 1 -->
-      <div class="card-group">
-        <div class="card">
-          <img src="./IMG/Post-1/Home(1).png"  class="card" alt="couture Noir"/>
-        </div>
-        <div class="card">
-          <img src="./IMG/Post-2/Blue Horizon Bank(1).png" class="card-img" alt="Blue horizon bank"/>
-        </div>
-        <div class="card">
-          <img src="./IMG/Post-3/Instagram Post Square - 2(1).png" class="card-img-top" alt="Emerald grove Gardens"/>
-        </div>
+                  <a class="carousel-control-prev" href="#hiroTeamCarousel" role="button" data-slide="prev">
+                    
+                      <img src="" alt="" width="20px">
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#hiroTeamCarousel" role="button" data-slide="next">
+                      <img src="" alt="" width="20px">
+                      <span class="sr-only">Next</span>
+                  </a>
+
+              </div>
+          </div>
+
+          <div class="col-md-7 wow fadeInRight">
+              <div id="hiroTeamCarousel" class="hiro-team-carousel carousel slide" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <div class="team-card" data-animation="animated flipInY">
+                                      <img src="./IMG/Posts/Instagram Post Square -1.png" alt="Paulina Gayoso" class="team-member-thumbnail">
+                                      <div class="team-member-details">
+                                          <h6 class="team-member-name">Easel Oils</h6>
+                                          <p class="team-member-title">Poster</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6">
+                                  <div class="team-card featured" data-animation="animated flipInY">
+                                      <img src="./IMG/Posts/Instagram Post Square -3.png" alt="Edwards" class="team-member-thumbnail">
+                                      <div class="team-member-details">
+                                          <h6 class="team-member-name">Sunflower Reverie</h6>
+                                          <p class="team-member-title">Poster</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <div class="team-card" data-animation="animated flipInY">
+                                      <img src="./IMG/Posts/Instagram Post Square-2.png" alt="Paulina Gayoso" class="team-member-thumbnail">
+                                      <div class="team-member-details">
+                                          <h6 class="team-member-name">Paulina Gayoso</h6>
+                                          <p class="team-meber-title">Project Manager</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6">
+                                  <div class="team-card featured" data-animation="animated flipInY">
+                                      <img src="assets/images/img_4.png" alt="Edwards" class="team-member-thumbnail">
+                                      <div class="team-member-details">
+                                          <h6 class="team-member-name">Edwards</h6>
+                                          <p class="team-meber-title">CTO, Co-Founder</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <div class="team-card" data-animation="animated flipInY">
+                                      <img src="assets/images/img_5.png" alt="Paulina Gayoso" class="team-member-thumbnail">
+                                      <div class="team-member-details">
+                                          <h6 class="team-member-name">Paulina Gayoso</h6>
+                                          <p class="team-meber-title">Project Manager</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6" data-animation="animated flipInY">
+                                  <div class="team-card featured">
+                                      <img src="assets/images/img_4.png" alt="Edwards" class="team-member-thumbnail">
+                                      <div class="team-member-details">
+                                          <h6 class="team-member-name">Edwards</h6>
+                                          <p class="team-meber-title">CTO, Co-Founder</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
   </div>
-
-</div>
-<div class="projects-page py-5"><a class=" btn btn-lg learn " href="projects.html">View More</a></div>
 </section>
+<!-- End Projects section -->
 
 <!-- Showcase -->
 <section class="showcase">
@@ -113,6 +191,9 @@
     </div>
 </div>
 </section>
+
+
+
 
 <!-- Social Media Sticky Footer -->
 <div class="icon-bar d-none d-sm-block">
@@ -144,9 +225,10 @@
 </div>
 </section>
 
+    <script src="./Assets/wowjs/wow.min.js"></script>
     <script src="jquery/jquery.min.js" type="text/javascript"></script>
     <script src="popper/popper.min.js" type="text/javascript"></script>
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
