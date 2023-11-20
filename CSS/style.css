@@ -298,6 +298,7 @@ header h5{
   }
 }
 
+/* Projects */
 .section-title {
   font-size: 72px; 
   font-family: "Bree Serif", serif;
@@ -359,7 +360,7 @@ header h5{
     width: 100%; }
   .hiro-team-carousel .team-card .team-member-details {
     position: absolute;
-    background-color: #431818;
+    background-color: blueviolet;
     padding: 20px 22px;
     bottom: 0;
     right: -5px; }
@@ -376,7 +377,7 @@ header h5{
       margin-bottom: 0; }
 
   .hiro-team-carousel .team-card.featured .team-member-details {
-    background-color: #9fa431; }
+    background-color: blueviolet; }
 
 .carousel {
   position: relative; }
@@ -532,21 +533,37 @@ header h5{
 
 /* Services */
 .hiro-section {
-  padding: 70px;
+  padding: 80px;
   padding-bottom: 90px; }
+
   @media (max-width: 767px) {
     .hiro-section {
-      padding: 35px 20px; } }
+      padding: 55px 30px; } }
 
 .service-section {
   padding-right: 150px;
-  position: relative; }
-  @media (max-width: 767px) {
+  position: relative; 
+}
+.service-section-title{
+  font-family: "Bree Serif", serif;
+  padding: 0px 0px 20px 0px;
+  font-size: 55px ;
+}
+@media (max-width: 767px){
+  .service-section-title{
+    font-size: 50px ;
+  }
+}
+
+@media (max-width: 767px) {
     .service-section {
-      padding-right: 90px; } }
-  @media (max-width: 574px) {
+      padding-right: 90px; } 
+    }
+
+@media (max-width: 574px) {
     .service-section {
       padding-right: 0; } }
+      
   .service-section::before, .service-section::after {
     content: "";
     position: absolute;
@@ -557,55 +574,71 @@ header h5{
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat; }
+
     @media (max-width: 767px) {
       .service-section::before, .service-section::after {
         width: 40px;
         right: 25px;
-        background-size: auto; } }
+        background-size: auto; } 
+      }
+
     @media (max-width: 574px) {
       .service-section::before, .service-section::after {
-        content: none; } }
+        content: none; } 
+      }
+
   .service-section::before {
     background-image: url("../IMG/Stock/img_2@2x.png");
-    bottom: calc(50% + 32px); }
+    bottom: calc(50% + 32px); 
+  }
+
   .service-section::after {
     background-image: url("../IMG/Stock/img_1@2x.png");
-    top: calc(50% + 32px); }
+    top: calc(50% + 32px); 
+  }
+
   .service-section .service-category-title {
-    padding-bottom: 4px; }
-    .service-section .service-category-title::after {
+    padding-bottom: 0px; 
+  }
+
+  .service-section .service-category-title::after {
       content: "";
       display: block;
-      width: 50%;
+      width: 45%;
       height: 8px;
       margin-top: 4px;
       background-image: url("../IMG/Stock/Team_line_1.png");
-      background-size: auto 8px; }
+      background-size: auto 8px; 
+  }
 
-      .service-list .list-group-item {
-        padding: 8px 0;
+  .service-list .list-group-item {
+        padding: 10px 0;
         border-color: blueviolet;
-        font-size: 14px;
-        font-weight: 500; }
+        font-size: 15px;
+        font-weight: 510; }
 
-        .list-group-flush .list-group-item {
+ .list-group-flush .list-group-item {
           border-right-width: 0;
           border-left-width: 0;
           border-radius: 0; }
-          .list-group-flush .list-group-item:first-child {
+
+ .list-group-flush .list-group-item:first-child {
             border-top-width: 0; }
         
-        .list-group-flush:last-child .list-group-item:last-child {
+ .list-group-flush:last-child .list-group-item:last-child {
           border-bottom-width: 0; }
 
-          .list-group {
+ .list-group {
             display: flex;
             flex-direction: column;
-            padding-left: 0;
-            margin-bottom: 0; }
+            padding-left: 0px;
+            margin-bottom: 0;
+ }
 
-            .career-section {
-              background-color: blueviolet;
+
+ /* Build your portfolio */
+ .career-section {
+ background-color: blueviolet;
             }
 
             .career-section-title {
@@ -645,7 +678,6 @@ header h5{
 }
   
 /* Showcase */
-
 .showcase h2{
   font-weight: 600;
   font-size: 35px;
@@ -689,7 +721,7 @@ header h5{
   font-size: 20px;
 }
 
-/* Style the social media icons with color, if you want */
+
 .icon-bar a:hover {
   background-color: #ffffff;
   color: blueviolet;
@@ -712,64 +744,19 @@ header h5{
   border-radius: 0px 0px 20px 0px;
 }
 
-
-/* Footer 
-#footer{
+ /*Contact */
+.contact-section-title{
+  font-size: 40px;
   font-family: "Bree Serif", serif;
-}
-.divider {
-  width: 100%;
-  height: 2rem;
-  background-color: #8a2be2;
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-#footer span{
-  font-size: 20px;
-}
-.bi-file-code-fill{
-  font-size: 30px;
-  color: #8a2be2;
-}
-#footer li{
-  font-size: 30px;
-}
-#footer li .bi-twitter{
-color: #8a2be2;
-}
-#footer li .bi-instagram{
-  color:#8a2be2;
-  }
-  #footer .bi-code{
-    font-size: 30px;
-    color: #8a2be2;
-  }
-   #footer li .bi-github{
-    color: #8a2be2;
-    }
 
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      #footer li{
-        font-size:unset;
-      }
-      #footer span{
-        font-size: 20px;
-      }
-    }
-    */
-    
+}
 .contact-section{
   background-color: black;
 }
-.contact-section .section-title {
-  font-size: 50px;
-  margin-bottom: 36px; 
-  color: white;
-}
+
   @media (max-width: 767px) {
-    .contact-section .section-title {
-      font-size: 50px; } }
+    .contact-section-title {
+      font-size: 40px; } }
 
 .contact-social-links .nav-link {
   padding: 0 10px; 
@@ -777,22 +764,21 @@ color: #8a2be2;
   .contact-social-links .nav-link .bi{
     width: 20px;
     height: 20px;
-
    }
    .bi-twitter{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
    }
    .bi-linkedin{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
    }
    .bi-instagram{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
    }
    .bi-github{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
    }
 
