@@ -19,7 +19,7 @@ html{
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
-  padding-bottom: 0;
+  padding-bottom: 25px;
   position: relative;
   z-index: 1001; 
 }
@@ -856,6 +856,23 @@ header h5{
 }
 
  /*Contact */
+
+ .mail, .phone {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+ }
+ 
+ .mail:hover{
+  text-decoration: none;
+  color: blueviolet;
+ }
+
+ .phone:hover{
+  text-decoration: none;
+  color: blueviolet;
+ }
+ 
+
 .contact-section-title{
   font-size: 40px;
   font-family: "Bree Serif", serif;
