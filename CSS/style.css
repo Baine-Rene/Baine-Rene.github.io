@@ -5,6 +5,15 @@ html{
   scroll-behavior: smooth;
 }
 
+.hiro-loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../IMG/Stock/loader.gif) center no-repeat #fff; }
+
 /* Nav-bar */
 .hiro-nav {
   display: flex;
