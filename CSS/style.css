@@ -5,68 +5,56 @@ html{
   scroll-behavior: smooth;
 }
 
-.hiro-loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(../IMG/Stock/loader.gif) center no-repeat #fff; }
-
 /* Nav-bar */
+
 .hiro-nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   position: relative;
-  z-index: 1001; 
-}
+  z-index: 1001; }
   .hiro-nav .logo-white {
-    display: none; 
-  }
+    display: none; }
 
 .hiro-nav-popup-toggle {
   border: 0;
-  background-color: transparent; 
-}
+  background-color: transparent; }
   .hiro-nav-popup-toggle #hiro-agency {
-    fill: #000000; 
-  }
+    fill: #000000; }
   .hiro-nav-popup-toggle:focus {
-    outline: none; 
-  }
+    outline: none; }
   .hiro-nav-popup-toggle #menu rect {
-    transition: all 0.5s ease-in-out;
-   }
+    transition: all 0.3s ease-in-out; }
 
 .hiro-nav-popup-modal-open {
   overflow: hidden; }
-  
   @media (max-width: 767px) {
     .hiro-nav-popup-modal-open {
-      padding-top: 0px;
-     } 
-    }
-
+      padding-top: 81px; } }
+  .hiro-nav-popup-modal-open .hiro-header {
+    background-image: none; }
+    @media (max-width: 767px) {
+      .hiro-nav-popup-modal-open .hiro-header > nav {
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 81px;
+        top: 0;
+        z-index: 1001;
+        transition: all 0.3s ease-in-out; } }
   .hiro-nav-popup-modal-open .nav-brand .logo {
-    display: none; 
-  }
+    display: none; }
   .hiro-nav-popup-modal-open .nav-brand .logo-white {
-    display: inline-block; 
-  }
+    display: inline-block; }
   .hiro-nav-popup-modal-open .hiro-nav-popup-toggle #hiro-agency {
-    fill: #ffffff; 
-  }
+    fill: #ffffff; }
   .hiro-nav-popup-modal-open #menu rect:first-child {
     transform: rotate(45deg);
-    transform-origin: center; 
-  }
+    transform-origin: center; }
   .hiro-nav-popup-modal-open #menu rect:nth-child(2) {
     opacity: 0;
-    transform: translateX(-100%);
-   }
+    transform: translateX(-100%); }
   .hiro-nav-popup-modal-open #menu rect:last-child {
     transform: rotate(-45deg) translateY(7px);
     transform-origin: center; }
@@ -79,20 +67,14 @@ html{
   height: 100vh;
   top: 0;
   transform: translateX(0%) translateY(-100%);
-  transition: all 0.4s ease-in-out; 
-}
+  transition: all 0.4s ease-in-out; }
   .hiro-nav-popup-modal-open .hiro-nav-popup-modal {
     visibility: visible;
-    transform: translateX(0%) translateY(0%);
-   }
-
+    transform: translateX(0%) translateY(0%); }
   @media (max-width: 767px) {
     .hiro-nav-popup-modal {
       display: block;
-      padding-bottom: 0;
-     } 
-    }
-
+      padding-bottom: 0; } }
   .hiro-nav-popup-modal:before, .hiro-nav-popup-modal:after {
     content: "";
     position: fixed;
@@ -171,8 +153,7 @@ html{
       color: #ffffff;
       margin-bottom: 30px;
       display: inline-block;
-      position: relative; 
-    }
+      position: relative; }
       .hiro-nav-popup-modal .hiro-main-nav .nav-link::after {
         content: "";
         position: absolute;
@@ -181,16 +162,25 @@ html{
         width: 0;
         height: 5px;
         opacity: 0;
-        background-color: blueviolet;
+        background-color: #44d7b6;
         transition: 0.3s ease-in-out all; }
       .hiro-nav-popup-modal .hiro-main-nav .nav-link:hover::after {
         opacity: 1;
         width: 100%; }
-        
- .hiro-nav-popup-toggle #hiro-agency {
-            fill: #000000; }
 
-/* Header */
+
+
+
+
+
+
+
+
+
+
+
+
+/* cursor
 .cursor {
   position: fixed;
   width: 20px;
@@ -203,17 +193,18 @@ html{
   transform: translate(-50%, -50%);
   transition: transform 0.2s ease;
 }
+*/
 
-header {
+.landing {
   padding-top: 90px;
   padding-bottom: 80px;
 }
 
-header h1 {
+.landing h1 {
   font-family: "Bree Serif", serif;
   font-size: 69px;
 }
-header h5{
+.landing h5{
   font-weight: 580;
 }
 
@@ -316,7 +307,7 @@ header h5{
   }
 }
 
-/* Header button */
+/* learn more button */
 .btn {
   background-color: #8a2be2;
   border-radius: 0px 20px 0px 20px;
@@ -327,11 +318,6 @@ header h5{
 .shadow-pop-bl {
 	-webkit-animation: shadow-pop-bl 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	        animation: shadow-pop-bl 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
-
-.btn:hover {
-  background-color:#8a2be2;
-  color: white;
 }
 
 @media (max-width: 575.98px) {
@@ -374,7 +360,7 @@ header h5{
             transform: translateX(8px) translateY(-8px);
   }
 }
-/* Header End */
+/* landing section end */
 
 
 
