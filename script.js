@@ -17,6 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
  });
  
+ function toggleNavbar() {
+  var navbarLinks = document.getElementById("navbarLinks");
+  navbarLinks.style.display === "block" ? navbarLinks.style.display = "none" : navbarLinks.style.display = "block";
+}
+
+
+
+
+
+
  //End Cursor
 
  $('.hiro-nav-popup-toggle').click(function(){
@@ -96,3 +106,4 @@ $myCarousel.on('slide.bs.carousel', function (e) {
     .find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
 });
+
