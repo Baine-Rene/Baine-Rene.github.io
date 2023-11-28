@@ -18,6 +18,12 @@
       {
         "label": "off"
       }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-input-field-name": "off"
+      }
     ]
   }
 }
