@@ -8,11 +8,12 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
 
-    <title>Rene Rutahaba Baine</title>
-    <link
-    href="bootstrap/css/bootstrap.min.css"
-    type="text/css"
-    rel="stylesheet"/>
+    <title>Baine UI</title>
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <link rel="stylesheet" href="./Assets/animate.css/animate.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./CSS/style.css">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -20,83 +21,51 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
   />
-
-    <!-- Stylesheet -->
-    
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./Assets/animate.css/animate.min.css">
-    
-
     <!-- Favicon -->
     <link rel="icon" href="./IMG/Favicons/Favicon-1.png">
 
     <!-- Google fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Bree+Serif&family=Fira+Sans+Condensed:wght@500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- Nav -->
-<header class="oleez-header fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><img src="./IMG/Stock/site-logo-1.png" alt="baine_ui"></a>
-        <ul class="nav nav-actions d-lg-none ml-auto">
-        </ul>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
-            aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="oleezMainNav">
-            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="!#">Services</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#!" id="portfolioDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                        <a class="dropdown-item" href="portfolio-list.html">Portfolio list</a>
-                        <a class="dropdown-item" href="portfolio-grid.html">Portfolio grid</a>
-                        <a class="dropdown-item" href="gallery.html">Gallery</a>
-                    </div>
-                </li>
-   <!-- 
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#!" id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                  <div class="dropdown-menu" aria-labelledby="blogDropdown">
-                      <a class="dropdown-item" href="blog-standard.html">Blog Standard</a>
-                      <a class="dropdown-item" href="blog-grid.html">Blog grid</a>
-                      <a class="dropdown-item" href="blog-single.html">Blog Post</a>
-                  </div>
-              </li>
-               -->
-
-            </ul>
-
-            <ul class="navbar-nav d-none d-lg-flex">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " href="#!" id="languageDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">ENG</a>
-                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <a class="dropdown-item" href="#!">ARB</a>
-                        <a class="dropdown-item" href="#!">FRE</a>
-                    </div>
-                </li>
-                <li class="nav-item ml-5">
-                    <a class="nav-link pr-0 nav-link-btn" href="./contact.html" data-toggle="offCanvasMenu">Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <!-- NaV Bar -->
+    <header class="oleez-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="./IMG/Stock/Baine_UI_logo.svg" alt="Oleez"></a>
+            
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
+                aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="oleezMainNav">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#!" id="portfolioDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                        <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                            <a class="dropdown-item" href="portfolio-list.html">Portfolio list</a>
+                            <a class="dropdown-item" href="portfolio.html">Portfolio grid</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 
 <!-- Moving Cursor -->
@@ -104,13 +73,13 @@
 
 
 <!--  Landing -->
-<section class="landing">
+<section class="landing pt-3">
 <div class="container px-5">
 <div class="row justify-content-center">
 <div class="col-lg-8 col-xxl-6">
 <div class="my-5">
 <h5 class="slide-top animated fadeInUp"><span style="color: blueviolet;">Hello</span class="text-light"> My Name is,</h5>
-<h1 class="slide-title fw-bolder">René Rutahaba Baine</h1>
+<h1 class="slide-title fw-bolder">René <br> Baine</h1>
 <p class="slide-paragraph fw-normal py-3 animated fadeInUp">Welcome to my corner of the digital world! I am a passionate designer dedicated to curating seamless user experiences. Through meticulous attention to detail, I transform ideas into captivating user interfaces that strike the perfect balance between aesthetics and functionality.</p>
 <a class="shadow-pop-bl btn btn-lg" href="about.html">Learn More</a>
 </div>
@@ -137,7 +106,7 @@
           <div class="col-md-5 wow fadeInUp">
               <h1 class="section-title">My Work</h1>
               <p class="section-text-light"> From sleek mobile interfaces to immersive web experiences, my work is a testament to the belief that design should not only be visually captivating but also enhance the way we interact with the digital world. Explore the synergy of form and function as we embark on a visual voyage through my UI design portfolio.</p>
-              <a class="shadow-pop-bl btn" href="projects.html">View more</a>
+              <a class="shadow-pop-bl btn" href="gallery.html">View more</a>
           </div>
 
           <div class="col-md-7 wow fadeInRight">
@@ -147,7 +116,7 @@
                           <div class="row">
                               <div class="col-sm-6">
                                   <div class="team-card" data-animation="animated flipInY">
-                                      <img src="./IMG/Posts/Websites/index-website-min.png" alt="Paulina Gayoso" class="team-member-thumbnail">
+                                      <img src="./IMG/Posts/Websites/website-post-4.png" alt="Paulina Gayoso" class="team-member-thumbnail">
                                       <div class="team-member-details">
                                           <h6 class="team-member-name">Website</h6>
                                       </div>
@@ -155,7 +124,7 @@
                               </div>
                               <div class="col-sm-6">
                                   <div class="team-card featured" data-animation="animated flipInY">
-                                      <img src="./IMG/Posts/Posters/index-poster-min.png" alt="Edwards" class="team-member-thumbnail">
+                                      <img src="./IMG/Posts/Posters/poster-5.png" alt="Edwards" class="team-member-thumbnail">
                                       <div class="team-member-details">
                                           <h6 class="team-member-name">Poster</h6>
                                       </div>
@@ -296,13 +265,14 @@
   </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="./Assets/wowjs/wow.min.js"></script>
-<script src="./script.js"></script>
-    <script>
-      new WOW().init();
-  </script>
+<script src="assets/vendors/popper.js/popper.min.js"></script>
+<script src="assets/vendors/wowjs/wow.min.js"></script>
+<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/vendors/slick-carousel/slick.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/landing.js"></script>
+<script>
+    new WOW({mobile: false}).init();
+</script>
 </body>
 </html>

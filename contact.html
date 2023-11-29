@@ -8,11 +8,14 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
 
-    <title>Rene Rutahaba Baine</title>
-    <link
-    href="bootstrap/css/bootstrap.min.css"
-    type="text/css"
-    rel="stylesheet"/>
+    <title>Baine UI</title>
+    <link rel="stylesheet" href="./Assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./Assets/animate.css/animate.min.css">
+    
+    <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -31,170 +34,139 @@
 
     <!-- Google fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Bree+Serif&family=Fira+Sans+Condensed:wght@500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
+    <!-- NaV Bar -->
+    <header class="oleez-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="./IMG/Stock/Baine_UI_logo.svg" alt="Oleez"></a>
+            
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
+                aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="oleezMainNav">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#!" id="portfolioDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                        <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                            <a class="dropdown-item" href="portfolio-list.html">Portfolio list</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<!-- Nav -->
-<header class="oleez-header fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><img src="" alt="baine_ui"></a>
-        <ul class="nav nav-actions d-lg-none ml-auto">
-        </ul>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
-            aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="oleezMainNav">
-            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="!#">Services</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#!" id="portfolioDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                        <a class="dropdown-item" href="portfolio-list.html">Portfolio list</a>
-                        <a class="dropdown-item" href="portfolio-grid.html">Portfolio grid</a>
-                        <a class="dropdown-item" href="gallery.html">Gallery</a>
+    <main class="contact-page-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 offset-lg-2 contact-page-content-wrapper wow fadeInLeft">
+                    <div class="contact-page-content">
+                        <h4 class="contact-page-title">Lets Talk!</h4>
+                        <p class="contact-page-street-address">Need Help with a deign?<br>Want to create a brand? <br> Build your Portfolio today.</p>
+                        <p class="mb-3"> <a class="phone" href="https://wa.me/+256783505787" target="_blank"> UG: + 256 783 50578 </a><br> <a href=""> <a href="mailto:baineux.ui@gmail.com" class="mail" >baineux.ui@gmail.com</a></p>
+                        <ul class="nav contact-social-links-main">
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <a href="#!" class="nav-link bi-twitter">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <a href="#!" class="nav-link bi-instagram">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <a href="#!" class="nav-link bi-linkedin">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link bi-github">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-   <!-- 
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#!" id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                  <div class="dropdown-menu" aria-labelledby="blogDropdown">
-                      <a class="dropdown-item" href="blog-standard.html">Blog Standard</a>
-                      <a class="dropdown-item" href="blog-grid.html">Blog grid</a>
-                      <a class="dropdown-item" href="blog-single.html">Blog Post</a>
-                  </div>
-              </li>
-               -->
-            </ul>
-
-            <ul class="navbar-nav d-none d-lg-flex">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " href="#!" id="languageDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">ENG</a>
-                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <a class="dropdown-item" href="#!">ARB</a>
-                        <a class="dropdown-item" href="#!">FRE</a>
-                    </div>
-                </li>
-                <li class="nav-item ml-5">
-                    <a class="nav-link pr-0 nav-link-btn" href="./contact.html" data-toggle="offCanvasMenu">Contact
-                    </a>
-                </li>
-            </ul>
+                </div>
+                <div class=" container col-md-6 col-lg-4 contact-page-form-wrapper wow fadeInRight">
+                    <img src="./IMG/Backgrounds/dddepth-143.jpg" alt="png" width="330px">
+                </div>
+            </div>
         </div>
-    </nav>
-</header>
+    </main>
 
-  
-  <!-- Moving Cursor -->
-  <div class="cursor d-none d-sm-block"></div>
 
-  <main class="contact-page-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-4 offset-lg-2 contact-page-content-wrapper wow fadeInLeft">
-                <div class="contact-page-content">
-                    <h1 class="contact-page-title">Lets Talk!</h1>
-                    <p class="contact-page-street-address">Contact me today to discuss your project<br> Build your portfolio <br>Ensure a seamless user experience</p>
-                    <h5 class="contact-subtitle">Click the links below to get in touch me</h5>
-
-                    <p class="mb-3"><a class="phone" href="https://wa.me/+256783505787" target="_blank">UG: + 256 783 505787</a><br><a href="mailto:baineux.ui@gmail.com" class="mail">baineux.ui@gmail.com</a></p>
-                    <ul class="nav contact-social-links">
+<!--footer section -->
+<section class="contact-section hiro-section py-5 ">
+    <div class="container wow fadeInUp text-light">
+       
+        <div class="contact-address">
+            <div class="row">
+                <div class="col-md-5 text-light">
+                  <h2 class="contact-section-title">Let’s talk</h2>
+                    <p class="font-weight-medium">"Building the Web of Tomorrow, Today: <br> Empowering Digital Experiences"</p>
+                </div>
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <p class="font-weight-medium"> <a class="phone-footer" href="https://wa.me/+256783505787" target="_blank">UG: + 256 783 505787</a> <br> <a href="mailto:baineux.ui@gmail.com" class="mail-footer">baineux.ui@gmail.com</a></p>
+                    <ul class="nav contact-social-links-footer">
                         <li class="nav-item">
-                            <a href="#!" class="nav-link bi-twitter">
-                      
+                            <a href="https://twitter.com/rene_baine" class="nav-link bi-twitter">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#!" class="nav-link bi-linkedin">
+                            <a href="" class="nav-link bi-linkedin">
+     
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/baine_ui/" class="nav-link bi-instagram" target="_blank">
+                             
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/" class="nav-link bi-github">
                           
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#!" class="nav-link bi-instagram">
-                          
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#!" class="nav-link bi-github">
                             </a>
                         </li>
                     </ul>
                 </div>
-                
-            </div>
-            <div class="col-md-6 col-lg-4 contact-page-form-wrapper wow fadeInRight">
-              <img src="./IMG/Backgrounds/dddepth-084.jpg" width="400px" alt="">
+  
+                <div class="col-md-2 d-flex align-items-center">
+                    <a href="#top" class="go-top-btn">
+                        <img src="./IMG/Stock/arrow_up.png" alt="arrow up">
+                        <span class="sr-only">Go to top</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</main>
+  </section>
 
-<!-- Footer -->
-<section class="footer-section final-section">
-  <div class="container wow fadeInUp text-light">
-     
-      <div class="footer-address">
-          <div class="row">
-              <div class="col-md-5 text-light">
-                <h2 class="footer-section-title">Let’s talk</h2>
-                  <p class="font-weight-medium">"Building the Web of Tomorrow, Today: <br> Empowering Digital Experiences"</p>
-              </div>
-              <div class="col-md-5 mb-4 mb-md-0">
-                  <p class="font-weight-medium">UG: + 256 783 505787<br> <a href="mailto:baineux.ui@gmail.com" class="mail">baineux.ui@gmail.com</a></p>
-                  <ul class="nav footer-social-links">
-                      <li class="nav-item">
-                          <a href="https://twitter.com/rene_baine" class="nav-link bi-twitter">
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="" class="nav-link bi-linkedin">
-   
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="https://www.instagram.com/baine_ui/" class="nav-link bi-instagram" target="_blank">
-                           
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="https://github.com/" class="nav-link bi-github">
-                        
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-
-              <div class="col-md-2 d-flex align-items-center">
-                  <a href="#top" class="go-top-btn">
-                      <img src="./IMG/Stock/arrow_up.png" alt="arrow up">
-                      <span class="sr-only">Go to top</span>
-                  </a>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-    <script src="./Assets/wowjs/wow.min.js"></script>
-    <script src="jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="popper/popper.min.js" type="text/javascript"></script>
-    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./script.js"></script>
-    <script>
-      new WOW().init();
+  <script src="assets/vendors/popper.js/popper.min.js"></script>
+  <script src="assets/vendors/wowjs/wow.min.js"></script>
+  <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/vendors/slick-carousel/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/landing.js"></script>
+  <script>
+      new WOW({mobile: false}).init();
   </script>
 </body>
 </html>
