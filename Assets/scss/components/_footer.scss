@@ -1,65 +1,37 @@
-.oleez-footer {
-    background-color: #0e0e0f;
-    color: $white;
+.hiro-footer {
+    padding-top: 33px;
+    padding-bottom: 42px;
+    border-top: 1px solid #e6e6e6;
 
-    .footer-content {
-        padding-top: 90px;
-        padding-bottom: 45px;
+    .footer-text {
+        font-size: 10px;
+        font-weight: $font-weight-medium;
 
-        .footer-logo {
-            height: 30px;
-            margin-bottom: 19px;
-        }
-
-        .footer-intro-text {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 26px;
-            max-width: 288px;
-        }
-
-        .footer-social-links {
-            a {
-                font-size: 14px;
-                font-weight: $font-weight-bold;
-                line-height: 1;
-                color: inherit;
-                margin-right: 10px;
-            }
-        }
-
-        .footer-widget-text {
-            margin-bottom: 40px;
-
-            .widget-title {
-                font-size: 18px;
-                font-weight: $font-weight-medium;
-                line-height: 1.5;
-                margin-bottom: 6px;
-                color: theme-color();
-            }
-
-            .widget-content {
-                font-size: 14px;
-                line-height: 1.29;
-            }
+        @media (max-width: 767px) {
+            width: 100%;
+            text-align: center;
         }
     }
 
-    .footer-text {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 44px;
-        padding-bottom: 44px;
-
+    .footer-nav {
         @media (max-width: 767px) {
-            display: block;
+            width: 100%;
+            justify-content: space-between;
         }
 
-        p {
-            font-size: 14px;
-            line-height: 1.29;
+        .nav-link {
+            font-size: 10px;
+            font-weight: $font-weight-medium;
+            color: $black;
+
+            @include hover-focus {
+                color: rgba($black, 0.6);
+            }
+
+            @media (max-width: 767px) {
+                padding: 20px 0 0;
+            }
+
         }
     }
 }

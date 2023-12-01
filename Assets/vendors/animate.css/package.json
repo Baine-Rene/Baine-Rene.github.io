@@ -1,27 +1,29 @@
 {
-  "_from": "animate.css@^3.7.2",
+  "_from": "animate.css",
   "_id": "animate.css@3.7.2",
   "_inBundle": false,
   "_integrity": "sha512-0bE8zYo7C0KvgOYrSVfrzkbYk6IOTVPNqkiHg2cbyF4Pq/PXzilz4BRWA3hwEUBoMp5VBgrC29lQIZyhRWdBTw==",
   "_location": "/animate.css",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "tag",
     "registry": true,
-    "raw": "animate.css@^3.7.2",
+    "raw": "animate.css",
     "name": "animate.css",
     "escapedName": "animate.css",
-    "rawSpec": "^3.7.2",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "^3.7.2"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
-    "/"
+    "#USER",
+    "/",
+    "/wowjs"
   ],
   "_resolved": "https://registry.npmjs.org/animate.css/-/animate.css-3.7.2.tgz",
   "_shasum": "e73e0d50e92cb1cfef1597d9b38a9481020e08ea",
-  "_spec": "animate.css@^3.7.2",
-  "_where": "/Users/anujithrb/Projects/landing-templates/oleez",
+  "_spec": "animate.css",
+  "_where": "/Users/anujithrb/Projects/landing-templates/hiro",
   "author": {
     "name": "Daniel Eden"
   },
