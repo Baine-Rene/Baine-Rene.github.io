@@ -9,14 +9,10 @@
     />
     
     <title>Baine UI</title>
+    <link rel="stylesheet" href="./Assets/animate.css/animate.min.css">
     <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="./CSS/style.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -34,44 +30,41 @@
 <body>
 
     <!-- NaV Bar -->
-<header class="oleez-header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><img src="./IMG/Stock/Baine_UI_logo.svg" alt="baine_ui"></a>
-        <ul class="nav nav-actions d-lg-none ml-auto">
-        </ul>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
-            aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="oleezMainNav">
-            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="./gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#!" id="portfolioDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                        <a class="dropdown-item" href="portfolio-list.html">Portfolio list</a>
-                        <a class="dropdown-item" href="portfolio-grid.html">Portfolio grid</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav d-none d-lg-flex">
-                <li class="nav-item ml-5">
-                    <a class="nav-link pr-0 nav-link-btn" href="./contact.html" data-toggle="offCanvasMenu">Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header class="oleez-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="./IMG/Stock/Baine_UI_logo.svg" alt="Oleez"></a>
+            
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
+                aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="oleezMainNav">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#!" id="portfolioDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                        <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                            <a class="dropdown-item" href="portfolio-list.html">Portfolio list</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 <!--  Landing -->
 <section class="landing pt-3">
@@ -79,8 +72,8 @@
 <div class="row justify-content-center">
 <div class="col-lg-8 col-xxl-6">
 <div class="my-5">
-<h5 class="slide-top animated fadeInUp"><span style="color: blueviolet;">Hello</span class="text-light"> My Name is,</h5>
-<h1 class="slide-title fw-bolder">René <br> Baine</h1>
+<h5 class="slide-top animated fadeInUp"><span class="fst-italic" style="color: blueviolet;">Hello</span class="text-light"> My Name is,</h5>
+<h1 class="slide-title fw-bolder">René <br> Rutahaba <br> Baine</h1>
 <p class="slide-paragraph fw-normal py-3 animated fadeInUp">Welcome to my corner of the digital world! I am a passionate designer dedicated to curating seamless user experiences. Through meticulous attention to detail, I transform ideas into captivating user interfaces that strike the perfect balance between aesthetics and functionality.</p>
 <a class="shadow-pop-bl btn btn-lg" href="about.html">Learn More</a>
 </div>
@@ -106,7 +99,7 @@
       <div class="row">
           <div class="col-md-5 wow fadeInUp">
               <h1 class="section-title">My Work</h1>
-              <p class="section-text-light"> From sleek mobile interfaces to immersive web experiences, my work is a testament to the belief that design should not only be visually captivating but also enhance the way we interact with the digital world. Explore the synergy of form and function as we embark on a visual voyage through my UI design portfolio.</p>
+              <p class="section-text-light"> From sleek mobile interfaces to immersive web experiences, my work is a testament to the belief that design should not only be visually captivating but also enhance the way we interact with the digital world. </p>
               <a class="shadow-pop-bl btn" href="gallery.html">View more</a>
           </div>
 
@@ -145,7 +138,7 @@
 <section class="hiro-section" id="services">
   <div class="container">
       <div class="service-section">
-          <h1 class="service-section-title career-section-title">My Services</h1>
+          <h1 class="service-section-title career-section-title"> Services</h1>
           <div class="row">
               <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
                   <h6 class="service-category-title fw-bolder">Strategy</h6>
@@ -267,9 +260,13 @@
 </section>
 
 
+
+<script src="assets/vendors/popper.js/popper.min.js"></script>
 <script src="assets/vendors/wowjs/wow.min.js"></script>
+<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/vendors/slick-carousel/slick.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/landing.js"></script>
 <script>
     new WOW().init();
 </script>
