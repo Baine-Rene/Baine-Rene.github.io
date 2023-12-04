@@ -702,6 +702,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+  
   @media (max-width: 767px) {
     .hiro-header.home-header {
       background-size: 100% 81px;
