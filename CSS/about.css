@@ -4302,14 +4302,19 @@ main{
   padding-bottom:150px ;
 }
 
+.about-img{
+  height: 300px;
+  width: 300px;
+}
   
-  .about_me .section-title {
-    font-size: 55px;
-    font-weight: 700;
-    margin-bottom: 22px; 
-    font-family: bree serif;
-    text-align: center;
-  }
+  @keyframes backgroundAnimation {
+    0% { background-color: #ff0000; } /* Start color */
+    50% { background-color: #00ff00; } /* Middle color */
+    100% { background-color: #0000ff; } /* End color */
+}
+.about_me .section-title {
+  animation: backgroundAnimation 3s infinite; /* Adjust the duration as needed */
+}
   
   .about_me .section-subtitle {
     font-size: px;

@@ -30,41 +30,25 @@
 <body>
 
     <!-- NaV Bar -->
-    <header class="oleez-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><img src="./IMG/Stock/Baine_UI_logo.svg" alt="Oleez"></a>
-            
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
-                aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="oleezMainNav">
-                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="./gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#!" id="portfolioDropdown" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                        <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                            <a class="dropdown-item" href="portfolio-list.html">Portfolio list</a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav d-none d-lg-flex">
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <section id="nav-bar">
+        <input
+          class="menu-icon"
+          type="checkbox"
+          id="menu-icon"
+          name="menu-icon"
+        />
+        <label for="menu-icon"></label>
+        <nav class="nav">
+          <ul class="pt-4">
+            <li><a class="nav-link" href="index.html" style="text-decoration: none;">Home</a></li>
+            <li><a class="nav-link" href="ourstory.html" style="text-decoration: none;">Our story</a></li>
+            <li><a  class="nav-link" href="ourprojects.html" style="text-decoration: none;">Our projects</a></li>
+            <li><a class="nav-link" href="joinus.html" style="text-decoration: none;">Gallery</a></li>
+            <li><a class="nav-link" href="ourblog.html"style="text-decoration: none;">Our Blog </a></li>
+          </ul>
         </nav>
-    </header>
+      </section>
+      <!-- End of navbar -->
 
 <!--  Landing -->
 <section class="landing pt-3">
