@@ -9,11 +9,11 @@
     />
     
     <title>Baine UI</title>
-    <link rel="stylesheet" href="./Assets/animate.css/animate.min.css">
-    <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="assets/vendors/jquery/jquery.min.js"></script>
 
+    
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link
@@ -30,24 +30,79 @@
 <body>
 
     <!-- NaV Bar -->
-    <section id="nav-bar">
-        <input
-          class="menu-icon"
-          type="checkbox"
-          id="menu-icon"
-          name="menu-icon"
-        />
-        <label for="menu-icon"></label>
-        <nav class="nav">
-          <ul class="pt-4">
-            <li><a class="nav-link" href="index.html" style="text-decoration: none;">Home</a></li>
-            <li><a class="nav-link" href="./about.html" style="text-decoration: none;">About</a></li>
-            <li><a  class="nav-link" href="./portfolio-list.html" style="text-decoration: none;">Portfolio</a></li>
-            <li><a class="nav-link" href="./gallery.html" style="text-decoration: none;">Gallery</a></li>
-            <li><a class="nav-link" href="./contact.html"style="text-decoration: none;">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
+
+        <nav>
+            <div class="container">
+                <div class="hiro-nav">
+                    <a href="index.html" class="nav-brand">
+                        <img src="./IMG/Stock/Baine_UI_logo.svg" alt="Hiro" class="logo">
+                        <img src="./IMG/Stock/logo.svg" alt="Hiro" class="logo-white">
+                    </a>
+                    <button class="hiro-nav-popup-toggle">
+                        <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Hiro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="hiro-agency" transform="translate(-964.000000, -37.000000)" fill="#FFFFFF">
+                                    <g id="Menu" transform="translate(964.000000, 37.000000)">
+                                        <g id="menu">
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="7.50795322" width="19.9609942" height="2.4951462"></rect>
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="14.9964327" width="19.9609942" height="2.4951462"></rect>
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="0.0194736842" width="19.9609942" height="2.4951462"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+             </nav>
+            </div>
+        </div>
+
+
+    <div class="hiro-nav-popup-modal">
+        <div class="hiro-nav-popup-modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 menu-wrapper">
+                        <ul class="nav hiro-main-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#works" class="nav-link">Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 blog-posts text-white">
+                        <h5 class="popup-blog-headng">Blog</h5>
+                        <div class="media mb-4">
+                            <img src="assets/images/Blog_small2.jpg" alt="blog" width="86px" class="img-fluid mr-4">
+                            <div class="media-body align-self-end">
+                                <h5 class="popup-blog-post-title">Ambitious <br> designs</h5>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <img src="assets/images/Blog_small1.jpg" alt="blog" width="86px" class="img-fluid mr-4">
+                            <div class="media-body align-self-end">
+                                <h5 class="popup-blog-post-title">The Collection <br> Cover Archive</h5>
+                            </div>
+                        </div>
+                        <p><a href="blog.html" class="text-white link-hover-fx text-decoration-none" class="font-weight-medium">View more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       <!-- End of navbar -->
 
 <!--  Landing -->
@@ -56,7 +111,7 @@
 <div class="row justify-content-center">
 <div class="col-lg-8 col-xxl-6">
 <div class="my-5">
-<h5 class="slide-top animated fadeInUp"><span class="fst-italic" style="color: blueviolet;">Hello</span class="text-light"> My Name is,</h5>
+<h5 class="slide-top animated fadeInUp"><span class="italic" style="color: blueviolet;">Hello</span class="text-light"> My Name is,</h5>
 <h1 class="slide-title fw-bolder">René <br> Rutahaba <br> Baine</h1>
 <p class="slide-paragraph fw-normal py-3 animated fadeInUp">Welcome to my corner of the digital world! I am a passionate designer dedicated to curating seamless user experiences. Through meticulous attention to detail, I transform ideas into captivating user interfaces that strike the perfect balance between aesthetics and functionality.</p>
 <a class="shadow-pop-bl btn btn-lg" href="about.html">Learn More</a>
@@ -243,14 +298,10 @@
   </div>
 </section>
 
-
-
-<script src="assets/vendors/popper.js/popper.min.js"></script>
 <script src="assets/vendors/wowjs/wow.min.js"></script>
+<script src="assets/vendors/popper.js/popper.min.js"></script>
 <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/vendors/slick-carousel/slick.min.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/landing.js"></script>
 <script>
     new WOW().init();
 </script>
