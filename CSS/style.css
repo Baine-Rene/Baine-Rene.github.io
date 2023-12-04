@@ -96,9 +96,7 @@
               height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 @media (max-width:556px){
-  .nav{
-    background-color: #000000;
-  }
+
 }
 @keyframes border-transform{
     0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
@@ -166,17 +164,18 @@
   transition-delay: 50ms;
 }
 .nav ul li a{
-  .nav ul li a:hover{
-  font-size: 9vh;
-
+  font-size: 50px;
   text-transform: uppercase;
   line-height: 1.5;
-  font-weight: 750;
+  font-weight: 800;
   display: inline-block;
   position: relative;
   color: #ececee;
   transition: all 250ms linear;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.nav ul li a:hover{
   text-decoration: none;
 }
 
@@ -231,7 +230,7 @@
   }
   
   .nav ul li a{
-    font-size: 8vh;
+    font-size: 45px;
   }
 }
 /* End of Nav Bar */
