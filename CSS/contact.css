@@ -1313,10 +1313,54 @@ h6, .h6 {
   color: #FFFFFF;
 }
 
+
 .contact-content h5 {
   margin-top: 0;
   color: blueviolet;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .contact-content h3 {
+    margin-top: 0;
+    margin-bottom: 6.6rem;
+    color: #FFFFFF;
+  }
+    
+  .contact-content h5 {
+    margin-top: 0;
+    color: blueviolet;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .contact-content h3 {
+    margin-top: 0;
+    margin-bottom: 6.6rem;
+    color: #FFFFFF;
+  }
+  
+  .contact-content h5 {
+    margin-top: 0;
+    color: blueviolet;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .contact-content h3 {
+    margin-top: 0;
+    margin-bottom: 6.6rem;
+    color: #FFFFFF;
+  }
+  
+  .contact-content h5 {
+    margin-top: 0;
+    color: blueviolet;
+  }
+}
+
 
 .css-selector, .contact-secondary {
   float: left;
