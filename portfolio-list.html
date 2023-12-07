@@ -9,106 +9,108 @@
     />
 
     <title>Baine UI</title>
-    <script src="assets/vendors/jquery/jquery.min.js"></script>
-    <script src="assets/js/loader.js"></script>
-    <link rel="stylesheet" href="./Assets/animate.css/animate.min.css">
-    <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./CSS/project-list.css">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-  />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Favicon -->
-    <link rel="icon" href="./IMG/Favicons/Favicon-1.png">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- Google fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Bree+Serif&family=Fira+Sans+Condensed:wght@500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Bree+Serif&family=Fira+Sans+Condensed:wght@500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Your additional stylesheets -->
+  <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./IMG/Favicons/Favicon-1.png">
+
+  <!-- jQuery -->
+  <script src="assets/vendors/jquery/jquery.min.js"></script>
+
 </head>
 <body>
 
     <!-- NaV Bar -->
-    <header class="oleez-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><img src="./IMG/Stock/Baine_UI_logo.svg" alt="Oleez"></a>
-            
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
-                aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="oleezMainNav">
-                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="./gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#!" id="portfolioDropdown" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                        <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                            <a class="dropdown-item" href="portfolio-list.html">Portfolio list</a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav d-none d-lg-flex">
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header class="hiro-header home-header" id="top">
+        <nav>
+            <div class="container">
+                <div class="hiro-nav">
+                    <a href="index.html" class="nav-brand">
+                        <img src="./IMG/Stock/Baine_UI_logo.svg" alt="Hiro" class="logo">
+                        <img src="./IMG/Stock/Baine_UI_logo_white.svg" alt="Hiro" class="logo-white">
+                    </a>
+                    <button class="hiro-nav-popup-toggle">
+                        <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Hiro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="hiro-agency" transform="translate(-964.000000, -37.000000)" fill="#FFFFFF">
+                                    <g id="Menu" transform="translate(964.000000, 37.000000)">
+                                        <g id="menu">
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="7.50795322" width="19.9609942" height="2.4951462"></rect>
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="14.9964327" width="19.9609942" height="2.4951462"></rect>
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="0.0194736842" width="19.9609942" height="2.4951462"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
 
-<main class="portfolio-list">
-    <div class="container">
-        <article class="project">
-            <div class="row">
-                <div class="col-md-4 mb-5 md-mb-0 project-content wow fadeInLeft">
-                    <h2 class="project-title">Elysdian <br> Palette Studios</h2>
-                    <p href="#!" class="project-link">More Soon</p>
-                </div>
-                <div class="col-md-7 mb-5">
-                    <div class="project-thumbnail-wrapper wow fadeInRight">
-                        <img src="./IMG/Posts/Websites/website-post-3.png" alt="project">
+    <div class="hiro-nav-popup-modal">
+        <div class="hiro-nav-popup-modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 menu-wrapper">
+                        <ul class="nav hiro-main-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="gallery.html" class="nav-link">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio-list.html" class="nav-link">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 blog-posts text-white">
+                        <h5 class="popup-blog-headng">Blog</h5>
+                        <div class="media mb-4">
+                            <img src="./IMG/Backgrounds/Blog_1.png" alt="blog" width="86px" class="img-fluid mr-4">
+                            <div class="media-body align-self-end">
+                                <h5 class="popup-blog-post-title">Ambitious <br> designs</h5>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <img src="./IMG/Backgrounds/Blog_2.png" alt="blog" width="86px" class="img-fluid mr-4">
+                            <div class="media-body align-self-end">
+                                <h5 class="popup-blog-post-title">The Collection <br> Cover Archive</h5>
+                            </div>
+                        </div>
+                        <p><a href="blog.html" class="text-white link-hover-fx text-decoration-none" class="font-weight-medium">View more</a></p>
                     </div>
                 </div>
             </div>
-        </article>
-        <article class="project">
-            <div class="row">
-                <div class="col-md-4 mb-5 md-mb-0 project-content wow fadeInLeft">
-                    <h2 class="project-title">UrbanEdge <br> Furniture</h2>
-                    <p href="#!" class="project-link">More Soon</p>
-                </div>
-                <div class="col-md-7 wow fadeInRight">
-                    <div class="project-thumbnail-wrapper">
-                        <img src="./IMG/Posts/Websites/website-post-1.png" alt="project">
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="project">
-            <div class="row">
-                <div class="col-md-4 mb-5 md-mb-0 project-content wow fadeInLeft">
-                    <h2 class="project-title">Couture <br>Noir</h2>
-                    <p href="#!" class="project-link">More Soon</p>
-                </div>
-                <div class="col-md-7 wow fadeInRight">
-                    <div class="project-thumbnail-wrapper">
-                        <img src="./IMG/Posts/Websites/website-post-2.png" alt="project">
-                    </div>
-                </div>
-            </div>
-        </article>
+        </div>
     </div>
+      <!-- End of navbar -->
+
+<main>
+    
 </main>
 
 <!-- Social Media Sticky Footer -->
@@ -165,14 +167,21 @@
   </div>
 </section>
 
-<script src="assets/vendors/popper.js/popper.min.js"></script>
-<script src="assets/vendors/wowjs/wow.min.js"></script>
-<script src="assets/vendors/masonry-layout/masonry.pkgd.min.js"></script>
-<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
-<script src="./js/main.js"></script>
-    <script>
-      new WOW().init();
-  </script>
+     <!-- Bootstrap JS and dependencies (Popper.js) -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 
+     <!-- WOW.js for animations -->
+     <script src="assets/vendors/wowjs/wow.min.js"></script>
+ 
+     <!-- Your additional scripts -->
+     <script src="assets/vendors/popper.js/popper.min.js"></script>
+     <script src="./js/main.js"></script>
+ 
+     <!-- Initialize WOW.js -->
+     <script>
+         new WOW().init();
+     </script>
 </body>
 </html>

@@ -874,29 +874,44 @@ html {
 
   
 /* About Section */
-main{
-  flex: 1;
-  padding-top: 20px;
-  padding-bottom:150px ;
+
+.cursor-outer {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 100%;
+  border: 1px solid #F59300;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  background-color: rgba(245, 147, 0, 0);
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  -webkit-transform: translate(calc(-50% + 15px), -50%);
+  -ms-transform: translate(calc(-50% + 15px), -50%);
+  transform: translate(calc(-50% + 15px), -50%);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+.cursor-outer.link-hover {
+  background-color: transparent;
+  width: 3.8rem;
+  height: 3.8rem;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background-blend-mode: color-burn;
 }
 
-.about-img{
-  height: 300px;
-  width: 300px;
-}
-  
-  @keyframes backgroundAnimation {
-    0% { background-color: #ff0000; } /* Start color */
-    50% { background-color: #00ff00; } /* Middle color */
-    100% { background-color: #0000ff; } /* End color */
-}
-.about_me .section-title {
-  animation: backgroundAnimation 3s infinite; /* Adjust the duration as needed */
-}
-  
-  .about_me .section-subtitle {
-    font-size: px;
-    margin-bottom: 39px; }
+
+
+
+
+
+
+
+
 
 /* Social media stick footer */
 .icon-bar {
