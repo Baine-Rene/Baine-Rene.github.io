@@ -12,11 +12,13 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block; }
 
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
@@ -1427,6 +1429,7 @@ col-lg-6{
   }
 }
 
+
 /* Social media stick footer */
 .icon-bar {
   position: fixed;
@@ -1550,3 +1553,36 @@ col-lg-6{
       font-size: 14px;
       line-height: 1.29; }
 
+/* Got to top */
+.go-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 600;
+  display: none;
+}
+
+.go-top a, .go-top a:visited {
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: black;
+  color: blueviolet;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.go-top a i, .go-top a:visited i {
+  font-size: 18px;
+  line-height: inherit;
+}
+
+.go-top a:hover, .go-top a:focus {
+  color: #FFFFFF;
+}
