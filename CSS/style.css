@@ -12,13 +12,11 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block; }
 
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
@@ -826,6 +824,8 @@ html {
 /* End of Nav Bar */
 
 
+
+
 /* Landing section */
 
 .landing h1 {
@@ -835,7 +835,7 @@ html {
 
 @media (max-width: 576px){
   .landing h1{
-    font-size: 55px;
+    font-size: 45px;
   }
 }
 
@@ -880,7 +880,7 @@ html {
   opacity: 0;
   -webkit-transform: translateY(20px) ;
   transform: translateY(20px);
-	-webkit-animation: slide-top 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	 animation: slide-top 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -1382,6 +1382,10 @@ html {
 }
   
 /* Showcase */
+col-lg-6{
+  max-width: 100%;
+}
+
 .showcase h2{
   font-weight: 600;
   font-size: 35px;
@@ -1390,7 +1394,16 @@ html {
 .showcase .showcase-text {
   padding: 3rem;
   border-radius: 0px 0px 0px 0px;
+  background-size: cover;
 }
+@media(min-width:556px){
+  .showcase .showcase-text {
+    padding: 0rem;
+    border-radius: 0px 0px 0px 0px;
+    background-size: cover;
+  }
+}
+
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
@@ -1402,9 +1415,15 @@ html {
   }
   
 }
-@media (min-width: 768px) {
+@media (min-width: 536px) and (max-width:974px) {
   .showcase .showcase-text {
-    padding: 10rem;
+    padding: 50px;
+  }
+}
+
+@media (min-width: 978px) and (max-width:2700px) {
+  .showcase .showcase-text {
+    padding: 150px;
   }
 }
 
