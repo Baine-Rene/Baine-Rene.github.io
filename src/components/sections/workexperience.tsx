@@ -7,6 +7,13 @@ import image from "next/image"
 
 const workItems = [
     {
+        company: "Overtype Studio",
+        role: "Founder",
+        date: "June 2025 - Present",
+        avatar: "/avatars/Overtype.png",
+        initials: "OT",
+    },
+    {
         company: "IWIP app",
         role: "Co-founder & Graphic designer",
         date: "April 2025 - Present",
@@ -20,6 +27,7 @@ const workItems = [
         avatar: "/avatars/Young Eye Foundation.png",
         initials: "YE",
     },
+
 ];
 
 export default function WorkExperience() {
@@ -32,7 +40,7 @@ export default function WorkExperience() {
                     <Card key={index} className="bg-[#0e0e0e] border-none shadow-none">
                         <CardContent className="flex items-start justify-between p-4">
                             <div className="flex items-center gap-4">
-                                <Avatar className="w-10 h-10">
+                                <Avatar className="w-15 h-15">
                                     <AvatarImage src={item.avatar} alt={item.initials} />
                                 </Avatar>
                                 <div>
