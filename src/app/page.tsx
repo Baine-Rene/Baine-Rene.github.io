@@ -1,3 +1,4 @@
+import Education from "@/components/sections/education";
 import WorkExperience from "@/components/sections/workexperience";
 
 export default function Home() {
@@ -15,6 +16,9 @@ export default function Home() {
 
       {/*Work Experience Section*/}
       <WorkExperience />
+
+      {/*education Section*/}
+      <Education />
     </>
   );
 }

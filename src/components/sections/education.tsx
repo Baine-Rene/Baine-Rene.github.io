@@ -6,33 +6,33 @@ import { Avatar, AvatarImage } from "../ui/avatar";
 
 const workItems = [
     {
-        company: "Overtype Studio",
-        role: "Founder",
-        date: "June 2025 - Present",
-        avatar: "/avatars/Overtype.png",
-        initials: "OT",
+        company: "Trent University",
+        role: "Bachelor’s Degree of Computer Science (BCS) Specialization in software engineering ",
+        date: "2024 - 2028",
+        avatar: "/avatars/Trent University.png",
+        initials: "TU",
     },
     {
-        company: "IWIP app",
-        role: "Co-founder & Graphic designer",
-        date: "April 2025 - Present",
-        avatar: "/avatars/Iwip.png",
-        initials: "IA",
+        company: "International Baccalaureate",
+        role: "IB Diploma",
+        date: "2021 - 2023",
+        avatar: "/avatars/International Baccalaureate.png",
+        initials: "IB",
     },
     {
-        company: "Young Eye Foundation",
-        role: "Graphic designer",
-        date: "April 2023 - January 2025",
-        avatar: "/avatars/Young Eye Foundation.png",
-        initials: "YE",
+        company: "International General Certificate of Secondary Education",
+        role: "Cambridge International Education",
+        date: "2019 - 2021",
+        avatar: "/avatars/IGCSE.png",
+        initials: "IG",
     },
 
 ];
 
-export default function WorkExperience() {
+export default function Education() {
     return (
         <section className="space-y-6">
-            <h2 className="text-white text-2xl mt-6 font-semibold">Work Experience</h2>
+            <h2 className="text-white text-2xl mt-6 font-semibold">Education</h2>
 
             <div className="space-y-4">
                 {workItems.map((item, index) =>
@@ -42,7 +42,7 @@ export default function WorkExperience() {
                                 <Avatar className="w-15 h-15">
                                     <AvatarImage src={item.avatar} alt={item.initials} />
                                 </Avatar>
-                                <div>
+                                <div className="mr-10">
                                     <h3 className="text-white font-semibold leading-tight">
                                         {item.company}
                                     </h3>
