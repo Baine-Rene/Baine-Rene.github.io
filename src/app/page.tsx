@@ -1,5 +1,6 @@
 import Education from "@/components/sections/education";
 import WorkExperience from "@/components/sections/workexperience";
+import { IconCloudDemo } from "@/components/sections/skills";
 
 export default function Home() {
   return (
@@ -17,8 +18,13 @@ export default function Home() {
       {/*Work Experience Section*/}
       <WorkExperience />
 
+      {/*Skills Section*/}
+      <IconCloudDemo />
+
       {/*education Section*/}
       <Education />
+
+
     </>
   );
 }
