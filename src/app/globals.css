@@ -119,10 +119,25 @@
   body {
     @apply bg-background text-foreground;
     background-color: black;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 5em;
+    line-height: 1.5;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
   }
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: white;
+}
 
+p{
+  color: #9B9B9B;
 }
