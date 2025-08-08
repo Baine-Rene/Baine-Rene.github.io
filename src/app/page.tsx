@@ -25,6 +25,7 @@ export default function Home() {
       {/*education Section*/}
       <Education />
 
+      {/*Footer*/}
       <div className="flex flex-col items-center mt-20">
       <Badge className="text-2lg  text-center"> Projects</Badge>
       <h2 className="text-5xl font-bold my-5">Coming Soon!</h2>
