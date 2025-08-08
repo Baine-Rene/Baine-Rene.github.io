@@ -1,6 +1,6 @@
 // Components
 import { Card, CardContent } from "../ui/card";
-import { Avatar, AvatarImage } from "../ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "../ui/avatar";
 
 // Details
 
@@ -37,19 +37,23 @@ export default function Education() {
             <div className="space-y-4">
                 {workItems.map((item, index) =>
                     <Card key={index} className="bg-[#0e0e0e] border-none shadow-none">
-                        <CardContent className="flex items-start justify-between p-4">
+                        <CardContent className="flex flex-col  sm:flex-row sm:items-center sm:justify-between gap-4">
                             <div className="flex items-center gap-4">
-                                <Avatar className="w-15 h-15">
+                                <Avatar className="w-12 h-12">
                                     <AvatarImage src={item.avatar} alt={item.initials} />
+                                    <AvatarFallback>{item.initials}</AvatarFallback>
                                 </Avatar>
-                                <div className="mr-10">
+
+                                <div className="flex flex-col">
                                     <h3 className="text-white font-semibold leading-tight">
                                         {item.company}
                                     </h3>
                                     <p className="text-muted-foreground text-sm">{item.role}</p>
+                                    <span className="text-muted-foreground text-sm sm:hidden">{item.date}</span>
                                 </div>
                             </div>
-                            <span className="text-muted-foreground text-sm whitespace-nowrap">{item.date}</span>
+
+                            <span className="hidden sm:block text-muted-foreground text-sm whitespace-nowrap">{item.date}</span>
                         </CardContent>
                     </Card>
                 )}

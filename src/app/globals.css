@@ -141,3 +141,8 @@ h6 {
 p{
   color: #9B9B9B;
 }
+
+footer{
+      gap: 1rem;
+    margin-top: 2rem;
+}

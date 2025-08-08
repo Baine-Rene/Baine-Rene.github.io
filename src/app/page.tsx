@@ -22,12 +22,18 @@ export default function Home() {
       {/*education Section*/}
       <Education />
 
-      {/*Footer*/}
+      {/*projects*/}
       <div className="flex flex-col items-center mt-20">
       <Badge className="text-2lg  text-center"> Projects</Badge>
       <h2 className="text-5xl font-bold my-5">Coming Soon!</h2>
       <p className="text-center">I will upload projects that I work on here with the link to the project and the github repository</p>
       </div>
+
+
+      {/*Footer*/}
+      <footer>
+    
+      </footer>
     </>
   );
 }

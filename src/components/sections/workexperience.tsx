@@ -32,38 +32,32 @@ const workItems = [
 export default function WorkExperience() {
     return (
         <section className="space-y-6">
-            <h2 className="text-white text-2xl mt-6 font-semibold">Work Experience</h2>
-
-             <div className="space-y-4">
-        {workItems.map((item, index) => (
-          <Card key={index} className="bg-[#0e0e0e] border-none shadow-none">
-            <CardContent className="p-4">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                {/* Left: Avatar + Text Stack */}
-                <div className="flex flex-col items-start sm:flex-row sm:items-center gap-4">
-                  {/* Avatar */}
-                  <Avatar className="w-12 h-12">
-                    <AvatarImage src={item.avatar} alt={item.company} />
-                    <AvatarFallback>{item.initials}</AvatarFallback>
-                  </Avatar>
-
-                  {/* Company, Role, Date (stacked on mobile) */}
-                  <div className="flex flex-col">
-                    <h3 className="text-white font-semibold">{item.company}</h3>
-                    <p className="text-muted-foreground text-sm">{item.role}</p>
-                    <span className="text-muted-foreground text-sm sm:hidden">{item.date}</span>
-                  </div>
-                </div>
-
-                {/* Right: Date (only visible on sm and up) */}
-                <span className="hidden sm:block text-muted-foreground text-sm whitespace-nowrap">
-                  {item.date}
-                </span>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-        </section>
+                   <h2 className="text-white text-2xl mt-6 font-semibold">Education</h2>
+       
+                   <div className="space-y-4">
+                       {workItems.map((item, index) =>
+                           <Card key={index} className="bg-[#0e0e0e] border-none shadow-none">
+                               <CardContent className="flex flex-col  sm:flex-row sm:items-center sm:justify-between gap-4">
+                                   <div className="flex items-center gap-4">
+                                       <Avatar className="w-12 h-12">
+                                           <AvatarImage src={item.avatar} alt={item.initials} />
+                                           <AvatarFallback>{item.initials}</AvatarFallback>
+                                       </Avatar>
+       
+                                       <div className="flex flex-col">
+                                           <h3 className="text-white font-semibold leading-tight">
+                                               {item.company}
+                                           </h3>
+                                           <p className="text-muted-foreground text-sm">{item.role}</p>
+                                           <span className="text-muted-foreground text-sm sm:hidden">{item.date}</span>
+                                       </div>
+                                   </div>
+       
+                                   <span className="hidden sm:block text-muted-foreground text-sm whitespace-nowrap">{item.date}</span>
+                               </CardContent>
+                           </Card>
+                       )}
+                   </div>
+               </section>
     )
 }
