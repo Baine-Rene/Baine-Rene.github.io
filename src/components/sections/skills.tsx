@@ -11,7 +11,7 @@ const slugs = [
     "astro",
     "nextdotjs",
     "css",
-    "notion",
+    "java",
     "git",
     "github",
     "visualstudiocode",
