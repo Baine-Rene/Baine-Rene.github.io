@@ -52,7 +52,6 @@ export default function WorkExperience() {
                                            <span className="text-muted-foreground text-sm sm:hidden">{item.date}</span>
                                        </div>
                                    </div>
-       
                                    <span className="hidden sm:block text-muted-foreground text-sm whitespace-nowrap">{item.date}</span>
                                </CardContent>
                            </Card>

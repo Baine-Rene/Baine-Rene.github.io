@@ -22,18 +22,26 @@ export default function Home() {
       {/*education Section*/}
       <Education />
 
+      {/*Skills*/}
+      <div>
+
+      </div>
+
       {/*projects*/}
       <div className="flex flex-col items-center mt-20">
-      <Badge className="text-2lg  text-center"> Projects</Badge>
-      <h2 className="text-5xl font-bold my-5">Coming Soon!</h2>
+      <Badge className="text-lg text-center bg-white text-dark">My Projects</Badge>
+      <h2 className="text-5xl font-bold my-5 tracking-tight">Coming Soon!</h2>
       <p className="text-center">I will upload projects that I work on here with the link to the project and the github repository</p>
       </div>
 
 
-      {/*Footer*/}
-      <footer>
-    
-      </footer>
+      {/*contact*/}
+
+      <div className="flex flex-col items-center mt-20 bg-[#0e0e0e] p-10 border-none shadow-none rounded-3xl">
+        <Badge className="text-lg bg-white text-dark">Contact</Badge>
+        <h2 className="text-5xl font-bold my-5 tracking-tight">Get In touch</h2>
+        <p className="text-center">You can learn more about me and the projects I'm working on by following my <a className="text-blue-700 hover:text-blue-400 underline" href="">LinkedIn</a> or <a className="text-blue-700 hover:text-blue-400 underline" href="">GitHub</a></p>
+      </div>
     </>
   );
 }
